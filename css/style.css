@@ -127,12 +127,14 @@
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
   overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
 }
 
 .promo-container {
   display: flex;
   align-items: center;
-  animation: promo-animation 10s linear infinite;
+  animation: promo-animation 5s linear infinite;
 }
 
 .promo-text {
@@ -148,15 +150,21 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   margin-right: 28px;
+  white-space: nowrap;
 }
 
 .promo-image {
   margin-right: 28px;
+  white-space: nowrap;
 }
 
 @keyframes promo-animation {
   0% {
     transform: translateX(100%);
+  }
+
+  50% {
+    transform: translateX(0);
   }
 
   100% {
@@ -212,4 +220,75 @@
   line-height: 72.576px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 437px;
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 23px;
+  left: 23px;
+  right: 23px;
+  padding: 20px;
+  text-align: center;
+  z-index: 2;
+}
+
+.card-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 14.4px;
+  border: 1px solid #000;
+}
+
+.card-title-s {
+  position: absolute;
+  top: 130px;
+  left: 120px;
+  right: 120px;
+  color: #000;
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28.08px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.card-title-m {
+  position: absolute;
+  top: 172px;
+  left: 40px;
+  right: 40px;
+  color: #000;
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38.016px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  z-index: 2;
 }
