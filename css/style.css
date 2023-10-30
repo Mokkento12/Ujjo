@@ -127,13 +127,12 @@
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
   overflow: hidden;
-
 }
 
 .promo-container {
   display: flex;
   align-items: center;
-  white-space: nowrap;
+  animation: promo-animation 10s linear infinite;
 }
 
 .promo-text {
@@ -149,14 +148,21 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   margin-right: 28px;
-
 }
 
 .promo-image {
   margin-right: 28px;
-  white-space: nowrap;
 }
 
+@keyframes promo-animation {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
 .left-image {
   padding: 20px;
