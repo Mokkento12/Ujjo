@@ -231,7 +231,7 @@
 .card {
   width: 437px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   margin: 20px auto;
 }
 
@@ -319,7 +319,7 @@
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  left: -40px;
   width: 58px;
   height: 88px;
   background-image: url('../img/fire-m.svg');
@@ -330,7 +330,7 @@
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
+  right: -40px;
   width: 58px;
   height: 88px;
   background-image: url('../img/fire-m.svg');
