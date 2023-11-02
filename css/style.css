@@ -406,6 +406,20 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   text-align: center;
+  position: relative;
+}
+
+.story-text::before {
+  content: '';
+  display: block;
+  width: 548.864px;
+  height: 564.192px;
+  position: absolute;
+  top: -73px;
+  left: -80px;
+  background-image: url('../img/stars.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .story-image::before {
@@ -414,8 +428,9 @@
   background-image: url('../img/banks.png');
   background-repeat: no-repeat;
   background-size: contain;
-  width: 562.785px;
-  height: 94.865px;
+  width: 563px;
+  height: 95px;
+  background-position: top center;
 }
 
 .story-image::before {
@@ -430,8 +445,8 @@
   background-image: url('../img/hares.png');
   background-repeat: no-repeat;
   background-size: contain;
-  width: 562.785px;
-  height: 131.889px;
+  width: 563px;
+  height: 132px;
 }
 
 .story-image::after {
