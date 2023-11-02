@@ -134,7 +134,7 @@
 .promo-container {
   display: flex;
   align-items: center;
-  animation: promo-animation 5s linear infinite;
+  animation: promo-animation 8s linear infinite;
 }
 
 .promo-text {
@@ -335,4 +335,107 @@
   height: 88px;
   background-image: url('../img/fire-m.svg');
   background-size: cover;
+}
+
+.big-bottle-block {
+  border-bottom: 1px solid #000;
+}
+
+.big-bottle-image {
+  width: 100%;
+  padding: 21px;
+}
+
+.story {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #000;
+}
+
+.story-content {
+  flex: 0 0 50%;
+  border-right: 1px solid #000;
+}
+
+.story-title {
+  color: #000;
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64.512px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #000;
+  padding: 54px;
+}
+
+.story-girl-photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.story-image {
+  width: 693.614px;
+  height: 696.586px;
+  flex: 1;
+  position: relative;
+  background-image: url('../img/story-img-bg.png');
+  background-size: cover;
+}
+
+.story-image-text {
+  display: flex;
+  padding: 130px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.story-text {
+  width: 392px;
+  color: #000;
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.story-image::before {
+  content: '';
+  position: absolute;
+  background-image: url('../img/banks.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 562.785px;
+  height: 94.865px;
+}
+
+.story-image::before {
+  top: 25px;
+  left: 66px;
+  background-position: top center;
+}
+
+.story-image::after {
+  content: '';
+  position: absolute;
+  background-image: url('../img/hares.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 562.785px;
+  height: 131.889px;
+}
+
+.story-image::after {
+  bottom: 23px;
+  left: 67px;
+  background-position: bottom center;
 }
