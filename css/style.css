@@ -453,3 +453,112 @@
   left: 67px;
   background-position: bottom center;
 }
+
+.fire-container {
+  position: relative;
+  width: 100%;
+  height: 737px;
+}
+
+.flame {
+  position: absolute;
+  width: 100%;
+  top: -12%;
+  left: 0;
+  bottom: 0;
+  background-image: url("../img/fire-green.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.frame {
+  position: relative;
+  width: 1354px;
+  height: 716px;
+  margin: 21px;
+  background-image: url("../img/frame.png");
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.corner-img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: 3;
+}
+
+.top-left {
+  background-image: url("../img/coals.svg");
+  background-repeat: no-repeat;
+  top: 47px;
+  left: 53px;
+}
+
+.top-right {
+  background-image: url("../img/cinnamon.svg");
+  background-repeat: no-repeat;
+  top: 47px;
+  right: 45px;
+}
+
+.bottom-left {
+  background-image: url("../img/circle.svg");
+  background-repeat: no-repeat;
+  bottom: 48px;
+  left: 53px;
+}
+
+.bottom-right {
+  background-image: url("../img/pepper.svg");
+  background-repeat: no-repeat;
+  bottom: 48px;
+  right: 46px;
+}
+
+.center-images {
+  position: absolute;
+  width: 860px;
+  height: 503px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-layer-big {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.image-layer-small {
+  position: absolute;
+  padding: 62px 22px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 93px;
+  border-top: 1px solid #000;
+  background-color: #CDFD3B;
+}
+
+.footer-link {
+  color: #000;
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
